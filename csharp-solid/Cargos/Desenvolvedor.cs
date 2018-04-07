@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace csharp_solid
 {
-    public class CalculadoraDeSalario
+    public class Desenvolvedor : Cargo
     {
-        public double calcula(Funcionario funcionario)
+        public Desenvolvedor(IRegraCalculo regra) : base(regra) // Equivale ao super() do Java
         {
-            return funcionario.Cargo.Regra.Calcula(funcionario);
+
         }
     }
 }

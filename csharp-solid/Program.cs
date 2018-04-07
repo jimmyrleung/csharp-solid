@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csharp_solid.Calculos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace csharp_solid
         static void Main(string[] args)
         {
             CalculadoraDeSalario calculadora = new CalculadoraDeSalario();
-            Funcionario dev = new Funcionario(new Desenvolvedor(), 2000);
+            Funcionario dev = new Funcionario(new Desenvolvedor(new DezOuVintePorcento()), 2000);
             Console.WriteLine(String.Format("Salário Bruto: {0}\nSalário Líquido: {1}", dev.SalarioBase, calculadora.calcula(dev)));
             System.Threading.Thread.Sleep(20000);
         }

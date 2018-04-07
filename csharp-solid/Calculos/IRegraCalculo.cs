@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp_solid
+namespace csharp_solid.Calculos
 {
-    public class Desenvolvedor : Cargo
+    public interface IRegraCalculo
     {
+        double Calcula(Funcionario funcionario);
     }
 }
