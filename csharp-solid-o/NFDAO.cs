@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace csharp_solid_o
 {
-    class NFDAO
+    class NFDAO : IAcaoAposGerarNF
     {
-        public void Persistir(NF nf)
+        public void Executar(NF nf)
         {
             Console.WriteLine("Persistindo NF...");
         }

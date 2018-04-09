@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace csharp_solid_o
 {
-    class EnviadorEmail : IAcaoAposGerarNF
+    interface IAcaoAposGerarNF
     {
-        public void Executar(NF nf)
-        {
-            Console.WriteLine("Enviando email...");
-        }
+        void Executar(NF nf);
     }
 }

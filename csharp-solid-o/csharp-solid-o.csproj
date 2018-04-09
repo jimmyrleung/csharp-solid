@@ -46,6 +46,7 @@
     <Compile Include="EnviadorEmail.cs" />
     <Compile Include="Fatura.cs" />
     <Compile Include="GeradorNF.cs" />
+    <Compile Include="IAcaoAposGerarNF.cs" />
     <Compile Include="NF.cs" />
     <Compile Include="NFDAO.cs" />
     <Compile Include="Program.cs" />

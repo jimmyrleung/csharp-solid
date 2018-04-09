@@ -8,13 +8,12 @@ namespace csharp_solid_o
 {
     class GeradorNF
     {
-        private EnviadorEmail email;
-        private NFDAO dao;
+        // Guardamos somente uma referência a uma lista de ações
+        private IList<IAcaoAposGerarNF> acoes;
 
-        public GeradorNF(EnviadorEmail email, NFDAO dao)
+        public GeradorNF(IList<IAcaoAposGerarNF> acoes)
         {
-            this.email = email;
-            this.dao = dao;
+            this.acoes = acoes;
         }
 
         public NF Gera(Fatura fatura)
@@ -24,8 +23,11 @@ namespace csharp_solid_o
 
             NF nf = new NF(valor, ImpostoSimplesSobreO(valor));
 
-            email.Enviar(nf);
-            dao.Persistir(nf);
+            // Agora podemos ter 1, 2, 5, 10, 20 ações
+            foreach (var acao in this.acoes)
+            {
+                acao.Executar(nf);
+            }
 
             return nf;
         }
