@@ -8,13 +8,19 @@ namespace csharp_solid_l
 {
     class CalculadoraDePreco
     {
+        private ITabelaPreco tabelaPreco;
+        private IServicoEntrega servicoEntrega;
+
+        public CalculadoraDePreco(ITabelaPreco tabelaPreco, IServicoEntrega servicoEntrega)
+        {
+            this.tabelaPreco = tabelaPreco;
+            this.servicoEntrega = servicoEntrega;
+        }
+
         public double Calcula(Compra produto)
         {
-            TabelaPrecoPadrao tabela = new TabelaPrecoPadrao();
-            FreteCorreios correios = new FreteCorreios();
-
-            double desconto = tabela.DescontoPara(produto.Valor);
-            double frete = correios.Para(produto.Cidade);
+            double desconto = this.tabelaPreco.CalculaDesconto(produto.Valor);
+            double frete = this.servicoEntrega.CalculaFrete(produto.Cidade);
 
             return produto.Valor * (1 - desconto) + frete;
         }
