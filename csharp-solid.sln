@@ -7,17 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-solid-1", "csharp-so
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-solid-2", "csharp-solid-o\csharp-solid-2.csproj", "{E590CB23-16F2-4B5E-B464-4D17CEDE210D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - S", "1 - S", "{144AAD61-1F45-4FA8-9655-BEA1368B4A56}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - O", "2 - O", "{2A54495E-C111-40A2-936D-E48CA391D4E1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - L", "3 - L", "{259A0BA9-8C4D-4F52-94E3-0B3E472575A9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - I", "4 - I", "{CB26FB3D-F356-4D01-A1C4-0F20FD1785B4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - D", "5 - D", "{38930AE4-061A-4F61-B44D-3AB593A59369}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp_solid_3", "csharp_solid_l\csharp_solid_3.csproj", "{8F6094F8-E9FB-4812-BF2C-3AC3783F65CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp_solid_4", "csharp_solid_4\csharp_solid_4.csproj", "{A4BE3F16-FE34-459C-A689-72F2ADC18679}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,13 +29,12 @@ Global
 		{8F6094F8-E9FB-4812-BF2C-3AC3783F65CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F6094F8-E9FB-4812-BF2C-3AC3783F65CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F6094F8-E9FB-4812-BF2C-3AC3783F65CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BE3F16-FE34-459C-A689-72F2ADC18679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BE3F16-FE34-459C-A689-72F2ADC18679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BE3F16-FE34-459C-A689-72F2ADC18679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BE3F16-FE34-459C-A689-72F2ADC18679}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{8BD71F12-639C-4A55-8E3D-2C402B2AD000} = {144AAD61-1F45-4FA8-9655-BEA1368B4A56}
-		{E590CB23-16F2-4B5E-B464-4D17CEDE210D} = {2A54495E-C111-40A2-936D-E48CA391D4E1}
-		{8F6094F8-E9FB-4812-BF2C-3AC3783F65CA} = {259A0BA9-8C4D-4F52-94E3-0B3E472575A9}
 	EndGlobalSection
 EndGlobal
